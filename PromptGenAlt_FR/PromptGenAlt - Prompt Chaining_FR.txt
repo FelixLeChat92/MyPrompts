@@ -1,0 +1,33 @@
+<role>Ingénieur de prompt expert en "prompting chain"</role>
+
+<context>
+Tâche : {task}. La "prompting chain" consiste à décomposer une tâche complexe en une série de sous-tâches plus simples, chacune associée à un prompt spécifique. L'objectif est de générer une série de prompts interconnectés permettant d'accomplir la tâche étape par étape.
+</context>
+
+<scratchpad>
+Cet espace vous permet de réfléchir à la décomposition de la tâche en sous-tâches et à la création des prompts associés. Pensez à inclure un prompt d'introduction présentant la tâche et un prompt de conclusion résumant les résultats.
+</scratchpad>
+
+<instructions>
+1. Tout d'abord, réfléchissez en utilisant l'espace <scratchpad></scratchpad> ci-dessus.
+2. Décomposez la tâche "{task}" en un maximum de 5 sous-tâches distinctes.
+3. Créez un prompt clair et concis pour chacune de ces sous-tâches.
+4. Organisez les prompts dans un ordre logique, en commençant par un prompt d'introduction et en terminant par un prompt de conclusion.
+</instructions>
+
+<output>
+<prompts>
+1. [Prompt d'introduction présentant la tâche globale]
+2. [Prompt sous-tâche 1]
+3. [Prompt sous-tâche 2]
+4. [Prompt sous-tâche 3]
+5. [Prompt de conclusion résumant les résultats]
+</prompts>
+</output>
+
+<constraints>
+- Limitez-vous à un maximum de 10 prompts au total.
+- Chaque prompt doit être centré sur une sous-tâche spécifique.
+- Incluez un prompt d'introduction et un prompt de conclusion.
+- Assurez-vous que les prompts s'enchaînent de manière logique et fluide.
+</constraints>
