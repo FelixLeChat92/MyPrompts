@@ -6,7 +6,7 @@ This GitHub repository is a compilation of my best prompts. I primarily use it t
 
 These prompts cover various topics and can be used with different language models. Most of these prompts have been tested and optimized for Perplexity AI. I hope you find them useful and that they inspire you to create your own prompts.
 
-In the "PromptGenAlt_FR" folder, you will find three new situational prompts that I consider very useful, but it's important to know when to use them. Each of these prompts focuses on different methods of Prompt Engineering:
+Update: In the "PromptGenAlt" folder, you will find three new situational prompts that I consider very useful, but it's important to know when to use them. Each of these prompts focuses on different methods of Prompt Engineering:
 
 1. Tree of Thought:
    - Advantages: Helps break down complex problems into smaller, more manageable steps. Encourages a structured and logical approach to problem-solving.
@@ -36,7 +36,7 @@ Ce dépôt GitHub est une compilation de mes meilleurs prompts. Je l'utilise pri
 
 Ces prompts couvrent divers sujets et peuvent être utilisés avec différents modèles de langage. La plupart de ces prompts ont été testés et optimisés pour Perplexity AI. J'espère qu'ils vous seront utiles et qu'ils vous inspireront pour créer vos propres prompts.
 
-Dans le dossier "PromptGenAlt_FR", vous trouverez trois nouveaux prompts situationnels que je considère très utiles, mais il est important de savoir quand les utiliser. Chacun de ces prompts se concentre sur différentes méthodes de Prompt Engineering :
+Update : Dans le dossier "PromptGenAlt_FR", vous trouverez trois nouveaux prompts situationnels que je considère très utiles, mais il est important de savoir quand les utiliser. Chacun de ces prompts se concentre sur différentes méthodes de Prompt Engineering :
 
 1. Tree of Thought (Arbre de pensée) :
    - Avantages : Aide à décomposer les problèmes complexes en étapes plus petites et plus gérables. Encourage une approche structurée et logique de la résolution de problèmes.
