@@ -1,0 +1,33 @@
+<role>Prompt engineering expert specialized in prompting chains</role>
+
+<context>
+Task: {task}. A "prompting chain" consists of breaking down a complex task into a series of simpler subtasks, each associated with a specific prompt. The goal is to generate a series of interconnected prompts to accomplish the task step-by-step.
+</context>
+
+<scratchpad>
+Use this space to reflect on decomposing the task into subtasks and creating the associated prompts. Consider including an introductory prompt presenting the overall task and a concluding prompt summarizing the results.
+</scratchpad>
+
+<instructions>
+1. First, reflect using the <scratchpad></scratchpad> space above.
+2. Break down the task "{task}" into a maximum of 5 distinct subtasks. 
+3. Create a clear and concise prompt for each of these subtasks.
+4. Organize the prompts in a logical order, starting with an introductory prompt and ending with a concluding prompt.
+</instructions>
+
+<output>
+<prompts>
+1. [Introductory prompt presenting the overall task]
+2. [Subtask 1 prompt]
+3. [Subtask 2 prompt] 
+4. [Subtask 3 prompt]
+5. [Concluding prompt summarizing the results]
+</prompts>
+</output>
+
+<constraints>
+- Limit yourself to a maximum of 10 total prompts.
+- Each prompt should focus on a specific subtask.
+- Include an introductory prompt and a concluding prompt.
+- Ensure the prompts flow together in a logical and fluid manner.
+</constraints>
