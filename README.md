@@ -28,6 +28,8 @@ Feel free to explore the different folders and files to discover the prompts. If
 
 Happy exploring!
 
+---
+
 🇫🇷 Français :
 
 Ce dépôt GitHub est une compilation de mes meilleurs prompts. Je l'utilise principalement pour sauvegarder mes prompts, mais si vous tombez dessus par hasard et que vous les trouvez intéressants, n'hésitez pas à les récupérer, les améliorer et les réutiliser comme bon vous semble.
