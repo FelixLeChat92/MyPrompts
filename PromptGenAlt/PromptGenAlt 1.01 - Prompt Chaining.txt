@@ -1,7 +1,14 @@
-<role>Prompt engineering expert specialized in prompting chains</role>
+<role>Prompt engineering expert specialized in creating prompting chains</role>
 
 <context>
-Task: {task}. A "prompting chain" consists of breaking down a complex task into a series of simpler subtasks, each associated with a specific prompt. The goal is to generate a series of interconnected prompts to accomplish the task step-by-step.
+Task: {task}. A "prompting chain" is a technique for breaking down a complex task into a series of simpler subtasks, each associated with a specific prompt. The goal is to generate a series of interconnected prompts that guide a single AI assistant to accomplish the task step-by-step, maintaining the context of previous steps.
+
+Example: If the task is "Create a monthly budget," the subtasks could be:
+1. List all sources of income
+2. Identify fixed expenses
+3. Identify variable expenses
+4. Allocate funds for savings and investments
+5. Review and adjust the budget
 </context>
 
 <input>
@@ -9,24 +16,36 @@ Task: {task}. A "prompting chain" consists of breaking down a complex task into 
 </input>
 
 <scratchpad>
-Use this space to reflect on decomposing the task into subtasks and creating the associated prompts. Consider including an introductory prompt presenting the overall task and a concluding prompt summarizing the results.
+Use this space to reflect on decomposing the task into subtasks and creating the associated prompts. Consider the following questions:
+- What are the main objectives and challenges of the task?
+- How can the task be broken down into manageable subtasks?
+- What context and instructions should be provided in each subtask prompt?
+- How can the subtasks be organized in a logical order?
+- How can the context of previous steps be maintained for the AI assistant?
 </scratchpad>
 
 <instructions>
-1. First, reflect using the <scratchpad></scratchpad> space above.
-2. Break down the task "{task}" into a maximum of 5 distinct subtasks. 
-3. Create a clear and concise prompt for each of these subtasks.
-4. Organize the prompts in a logical order, starting with an introductory prompt and ending with a concluding prompt.
+1. Analyze the given task "{task}" and identify the main objectives and challenges.
+2. Break down the task into distinct subtasks that collectively achieve the main objectives. Each subtask should be a manageable step towards the overall goal.
+3. For each subtask, create a clear and concise prompt that guides the AI assistant in completing that specific step. The prompt should provide necessary context and instructions, considering the context of previous steps.
+4. Organize the subtask prompts in a logical order, ensuring a smooth flow from one step to the next.
+5. Create an introductory prompt that presents the overall task, its objectives, and the approach of using a prompting chain with a single AI assistant to break it down into manageable steps.
+6. Create a concluding prompt that summarizes the results of the subtasks and ties them back to the overall task objectives.
+7. Specify that each subtask prompt is directly sent to the same AI assistant, which will apply the prompts one by one, maintaining the context of every previous step.
 </instructions>
 
 <output>
-<scratchpad>$reflection</scratchpad>
+<scratchpad>
+$reflection
+</scratchpad>
+
 <prompts>
-1. [Introductory prompt presenting the overall task]
+1. [Introductory prompt]
 2. [Subtask 1 prompt]
-3. [Subtask 2 prompt] 
+3. [Subtask 2 prompt]
 4. [Subtask 3 prompt]
-5. [Concluding prompt summarizing the results]
+...
+X. [Concluding prompt]
 </prompts>
 </output>
 
@@ -34,5 +53,6 @@ Use this space to reflect on decomposing the task into subtasks and creating the
 - Limit yourself to a maximum of 10 total prompts.
 - Each prompt should focus on a specific subtask.
 - Include an introductory prompt and a concluding prompt.
-- Ensure the prompts flow together in a logical and fluid manner.
+- Ensure the prompts flow together in a logical and fluid manner, maintaining the context of previous steps.
+- Every subtask must be doable by the same AI assistant, considering the context of previous steps.
 </constraints>
