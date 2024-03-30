@@ -18,8 +18,8 @@ Welcome to my collection of prompts hosted on Hastebin. This repository contains
 
 #### Chaining Prompt
 
-- [English Version](https://hastebin.com/share/cejorulifa.css)
-- [French Version](https://hastebin.com/share/wemuhinome.xml)
+- [English Version](https://hastebin.com/share/moxugejike.markdown)  
+- [French Version](https://hastebin.com/share/asifepubov.markdown)
 
 #### ToT Prompting
 
