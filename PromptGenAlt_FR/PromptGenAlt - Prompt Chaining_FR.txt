@@ -1,33 +1,58 @@
-<role>Ingénieur de prompt expert en "prompting chain"</role>
+<role>Expert en ingénierie des prompts spécialisé dans la création de chaînes de prompts</role>
 
 <context>
-Tâche : {task}. La "prompting chain" consiste à décomposer une tâche complexe en une série de sous-tâches plus simples, chacune associée à un prompt spécifique. L'objectif est de générer une série de prompts interconnectés permettant d'accomplir la tâche étape par étape.
+Tâche : {task}. Une "chaîne de prompts" est une technique permettant de décomposer une tâche complexe en une série de sous-tâches plus simples, chacune associée à un prompt spécifique. L'objectif est de générer une série de prompts interconnectés qui guident un assistant IA unique pour accomplir la tâche étape par étape, en maintenant le contexte des étapes précédentes.
+
+Exemple : Si la tâche est "Créer un budget mensuel", les sous-tâches pourraient être :  
+1. Lister toutes les sources de revenus
+2. Identifier les dépenses fixes
+3. Identifier les dépenses variables
+4. Allouer des fonds pour l'épargne et les investissements  
+5. Revoir et ajuster le budget
 </context>
 
+<input>
+{task}
+</input>
+
 <scratchpad>
-Cet espace vous permet de réfléchir à la décomposition de la tâche en sous-tâches et à la création des prompts associés. Pensez à inclure un prompt d'introduction présentant la tâche et un prompt de conclusion résumant les résultats.
+Utilisez cet espace pour réfléchir à la décomposition de la tâche en sous-tâches et à la création des prompts associés. Considérez les questions suivantes :
+- Quels sont les principaux objectifs et défis de la tâche ?
+- Comment la tâche peut-elle être décomposée en sous-tâches gérables ?
+- Quel contexte et quelles instructions doivent être fournis dans chaque prompt de sous-tâche ?
+- Comment les sous-tâches peuvent-elles être organisées de manière logique ?
+- Comment le contexte des étapes précédentes peut-il être maintenu pour l'assistant IA ?
 </scratchpad>
 
 <instructions>
-1. Tout d'abord, réfléchissez en utilisant l'espace <scratchpad></scratchpad> ci-dessus.
-2. Décomposez la tâche "{task}" en un maximum de 5 sous-tâches distinctes.
-3. Créez un prompt clair et concis pour chacune de ces sous-tâches.
-4. Organisez les prompts dans un ordre logique, en commençant par un prompt d'introduction et en terminant par un prompt de conclusion.
+1. Analysez la tâche donnée "{task}" et identifiez les principaux objectifs et défis.
+2. Décomposez la tâche en sous-tâches distinctes qui, collectivement, permettent d'atteindre les objectifs principaux. Chaque sous-tâche doit être une étape gérable vers l'objectif global.
+3. Pour chaque sous-tâche, créez un prompt clair et concis qui guide l'assistant IA dans la réalisation de cette étape spécifique. Le prompt doit fournir le contexte et les instructions nécessaires, en tenant compte du contexte des étapes précédentes.
+4. Organisez les prompts des sous-tâches dans un ordre logique, en assurant une transition fluide d'une étape à l'autre.
+5. Créez un prompt d'introduction qui présente la tâche globale, ses objectifs et l'approche consistant à utiliser une chaîne de prompts avec un assistant IA unique pour la décomposer en étapes gérables.
+6. Créez un prompt de conclusion qui résume les résultats des sous-tâches et les relie aux objectifs globaux de la tâche.
+7. Précisez que chaque prompt de sous-tâche est directement envoyé au même assistant IA, qui appliquera les prompts un par un, en maintenant le contexte de chaque étape précédente.
 </instructions>
 
 <output>
+<scratchpad>
+$reflection
+</scratchpad>
+
 <prompts>
-1. [Prompt d'introduction présentant la tâche globale]
-2. [Prompt sous-tâche 1]
-3. [Prompt sous-tâche 2]
-4. [Prompt sous-tâche 3]
-5. [Prompt de conclusion résumant les résultats]
+1. [Prompt d'introduction]
+2. [Prompt de sous-tâche 1]
+3. [Prompt de sous-tâche 2]  
+4. [Prompt de sous-tâche 3]
+...
+X. [Prompt de conclusion]
 </prompts>
 </output>
 
 <constraints>
 - Limitez-vous à un maximum de 10 prompts au total.
-- Chaque prompt doit être centré sur une sous-tâche spécifique.
+- Chaque prompt doit se concentrer sur une sous-tâche spécifique.
 - Incluez un prompt d'introduction et un prompt de conclusion.
-- Assurez-vous que les prompts s'enchaînent de manière logique et fluide.
+- Assurez-vous que les prompts s'enchaînent de manière logique et fluide, en maintenant le contexte des étapes précédentes.
+- Chaque sous-tâche doit pouvoir être réalisée par le même assistant IA, en tenant compte du contexte des étapes précédentes.
 </constraints>
