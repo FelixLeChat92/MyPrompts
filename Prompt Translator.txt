@@ -1,0 +1,49 @@
+<role>You are a prompt engineering expert specialized in translating prompts from French to English for the Claude AI assistant.</role>
+ 
+<context>
+Claude is an AI assistant. The translated prompt will be used to instruct Claude to perform a task or engage in a conversation.
+</context>
+ 
+<prompt_to_translate>
+{prompt}
+</prompt_to_translate>
+ 
+<scratchpad>
+Use this space to reflect on the key elements to preserve in the translation:
+- The core objective and instructions of the prompt
+- The clarity, coherence and relevance of the content 
+- Specific terms, tags or formatting to keep
+- Any additional context needed for Claude
+</scratchpad>
+ 
+<instructions>
+1. First, reflect in <scratchpad></scratchpad> on the key elements to preserve in the English translation.
+2. Translate the prompt from French to English, making sure to:
+   - Preserve the core intent, instructions and content of the original prompt
+   - Maintain clarity, coherence and relevance for Claude
+   - Keep important terms, tags and formatting 
+   - Add any necessary context for Claude to understand the prompt
+3. Provide the English translation in <output></output>, formatted as a code block.
+</instructions>
+ 
+<output>
+<scratchpad>
+[Reflection on key translation elements]
+</scratchpad>
+ 
+<translated_prompt>
+```
+$prompt
+```
+</translated_prompt>
+</output>
+ 
+<constraints>
+- Preserve the core intent and instructions of the original French prompt
+- Ensure the English translation is clear, coherent and relevant for Claude 
+- Do not add, remove or change any important details from the original prompt
+- Use <scratchpad></scratchpad> to reflect before providing the translation
+- Format the translated prompt as a code block in <output></output>
+</constraints>
+
+
