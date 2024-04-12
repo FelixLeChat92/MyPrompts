@@ -18,7 +18,9 @@ Pour chaque question, suivez attentivement les instructions suivantes en vous in
  
 2. Analysez le(s) document(s) et les informations relatives à la question. 
  
-3. Extrayez le contexte de la question, s'il existe, et rédigez le entièrement en *italique*. Le contexte doit contenir toutes les informations nécessaires pour pouvoir répondre à la question, comme par exemple une description d'un cas clinique, bilan biologique ...   
+3. Extrayez le contexte de la question,, s'il existe, et rédigez le entièrement en *italique*. Le contexte doit contenir toutes les informations nécessaires pour pouvoir répondre, comme par exemple une description d'un cas clinique, bilan biologique ...   
+- Si le contexte est le même entre plusieurs questions, rédige juste "même contexte que précédemment" à la place du contexte.
+- Le contexte correspond uniquement aux informations et éléments présents dans la même partie que la question
  
 4. Rappelez les notions de cours essentielles présente dans les document de cours, permettant de répondre à la ou les questions sous forme de liste, avec un bref rappel pour chacune.   
  
@@ -39,27 +41,13 @@ Pour chaque question, suivez attentivement les instructions suivantes en vous in
 8. Vérifiez que vous avez bien suivi toutes les instructions.
 </instructions>  
 
-<constraints>  
-Respectez ces contraintes :
-- Rédigez les réponses entièrement en **gras**. Rédigez les contextes et récapitulatifs entièrement en *italique*.    
-- Basez-vous UNIQUEMENT sur le(s) document(s) fourni(s).  
-- 1 seule proposition vraie ou fausse pour les QCU (Question à choix unique).
-- Réfléchissez étape par étape pour les corrections détaillées.
-- Séparez les questions de façon pertinente avant de répondre si la numérotation n'est pas adaptée. Les questions sont généralement séparées par des tirets, énumérations ... sauf en cas de QCM ou QCU.
-- Rédigez votre réponse en suivant la structure définie dans les exemples ci-dessous.
-- Rédigez votre réponse dans un bloc de code.
-- Pour "Partie [nombre].[chiffre]", ces dernières sont comprises entre 14.1 et 23.2. Utilise un titre h1 pour les parties, comme "# Partie 14.2".
-- Limitez la longueur de vos réponses à 300 mots maximum par question.
-- Corrigez le plus de parties possible dans chacun de vos messages. Tu corrigeras au moins une partie complète.
-</constraints>
-
 Voici quelques exemples de réponses possibles avec ce prompt, pour vous aider à structurer les vôtres :
 
 <exemplequestion>
 # Partie 18.2
 ## Question 18.2.2 : Expliquez le cycle de réplication du VIH.
 
-*Contexte de la question : Le VIH est un rétrovirus enveloppé à ARN monocaténaire de polarité positive. Son génome code notamment pour des enzymes essentielles à sa réplication comme la transcriptase inverse et l'intégrase.*
+*Contexte de la question : Un patient vous questionne sur le VIH.*
 
 **Notions essentielles :**
 - **Rétrovirus** : virus à ARN utilisant la transcriptase inverse pour rétrotranscrire leur génome en ADN avant de l'intégrer dans celui de la cellule hôte.
@@ -92,7 +80,7 @@ Complexité : 4/5. Le cycle est complexe et fait intervenir de nombreuses étape
 4. Diminue la concentration intracellulaire de calcium
 5. Ralentit la conduction auriculo-ventriculaire
 
-*Contexte de la question : Les glycosides cardiotoniques sont des médicaments inotropes positifs utilisés dans le traitement de l'insuffisance cardiaque. Leur chef de file est la digoxine, extraite de la digitale pourpre. Ils agissent en modulant les concentrations ioniques intracellulaires.*
+*Contexte de la question : Concernant la digoxine.*
 
 **Correction détaillée:**
 **Les réponses exactes sont les propositions 1, 2, 3 et 5.**
@@ -111,15 +99,15 @@ Complexité : 3/5. Les mécanismes d'action sont à connaître précisément mai
 
 <constraints>  
 Respectez ces contraintes :
+- Si le contexte est le même entre plusieurs questions, rédige juste "même contexte que précédemment" à la place du contexte.
 - Rédigez les réponses entièrement en **gras**. Rédigez les contextes et récapitulatifs entièrement en *italique*.    
 - Basez-vous UNIQUEMENT sur le(s) document(s) fourni(s).  
 - 1 seule proposition vraie ou fausse pour les QCU (Question à choix unique).
 - Réfléchissez étape par étape pour les corrections détaillées.
 - Séparez les questions de façon pertinente avant de répondre si la numérotation n'est pas adaptée. Les questions sont généralement séparées par des tirets, énumérations ... sauf en cas de QCM ou QCU.
-- Rédigez votre réponse en suivant la structure définie dans les exemples ci-dessous.
+- Rédigez votre réponse en suivant la structure définie dans les exemples ci-dessus.
 - Rédigez votre réponse dans un bloc de code.
 - Pour "Partie [nombre].[chiffre]", ces dernières sont comprises entre 14.1 et 23.2. Utilise un titre h1 pour les parties, comme "# Partie 14.2".
-- Limitez la longueur de vos réponses à 300 mots maximum par question.
 - Respectez la syntaxe markdown pour les retour à la ligne et les sauts de ligne.
 - Respectez les sauts de lignes et espaces afin d'avoir une structure claire. Lorsque vous devez mettre en italique ou gras une liste, appliquez bien le formatage à l'ensemble de la liste. 
 </constraints>
